@@ -1,0 +1,130 @@
+html,
+body {
+  height: 100%;
+  background: #000;
+  color: #000;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  letter-spacing: 1px;
+}
+
+main:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.2) 0,
+    transparent 60%
+  );
+}
+
+main:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.2) 0,
+    transparent 60%
+  );
+}
+
+main {
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.content-container {
+  height: 85%;
+  width: 100%;
+  background: url("/img/lausiv.jpeg");
+  background-size: cover;
+  position: relative;
+}
+.rectangle {
+  border-left: 8px solid #fff;
+  border-top: 8px solid #fff;
+  border-right: 0 transparent;
+  border-bottom: 0 transparent;
+  top: 2rem;
+  left: 2rem;
+  width: 100px;
+  height: 100px;
+}
+
+.corner {
+  position: absolute;
+  z-index: 5;
+  text-transform: uppercase;
+}
+
+.corner.description {
+  bottom: 2rem;
+  left: 2rem;
+}
+
+.description span {
+  color: #f05a29;
+  font-weight: bold;
+}
+
+.description p {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.description p:last-child {
+  margin-bottom: 0;
+}
+
+.corner.photo-film {
+  top: 2rem;
+  right: 2rem;
+}
+
+.corner.contacts {
+  right: 2rem;
+  bottom: 2rem;
+  transition: all 250ms;
+  width: 124px;
+}
+
+.corner a {
+  display: block;
+}
+a:hover {
+  color: #f05a29 !important;
+}
+
+a {
+  transition: all 250ms;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  color: #f05a29;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
